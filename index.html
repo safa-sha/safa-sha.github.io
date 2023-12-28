@@ -1,9 +1,120 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+</head>
 <body>
-  <h1>SAFA SHAMON</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <header>
+        <h1>Cheatsheet</h1>
+        <h2>Display and positioning in css</h2>
+    </header>
 
+    <section class="table">
+        <table>
+            <thead>
+                <tr>
+                    <td>SN</td>
+                    <td class="property">Property</td>
+                    <td clas="description">Description</td>
+                    <td>Possible values</td>
+                    <td>Outcomes</td>
+                </tr>
+            </thead>
+            <tr>
+                <td rowspan="3">1</td>
+                <td class="property" rowspan="3">Display</td>
+                <td class="description" rowspan="3">Determines the type of render block for an element</td>
+                <td>Block</td>
+                <td>Take up the full width of their container with line breaks before and after, and can have their height and width manually adjusted</td>
+            </tr>
+            <tr>
+                <td>Inline</td>
+                <td>Take up as little space as possible, flow horizontally, and cannot have their width or height manually adjusted</td>
+            </tr>
+            <tr>
+                <td>Inline-block</td>
+                <td>Can appear next to each other, and can have their width and height manually adjusted.</td>
+            </tr>
+            <tr>
+                <td class="inline" colspan="5"></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="5">2</td>
+                <td rowspan="5" class="property">Position</td>
+                <td rowspan="5" class="description">It positions HTML elments on a web page</td>
+                <td>Static</td>
+                <td>It is the default position for HTML elements</td>
+            </tr>
+            <tr>
+                <td>Relative</td>
+                <td>nables an element to be positioned relative to where it would have originally been on a web page. Accompanying the position declaration with one or more of the following offset properties will move the element away from its default position <br> Top - moves downwards <br>Bottom - moves upwards <br>Left - moves right <br>Right - moves left</td>
+            </tr>
+            <tr>
+                <td>Absolute</td>
+                <td>All other elements will ignore the element and It will be positioned relative to its closest parent element that is positioned with relative or absolute, top ,left. Attributes can be used and if the elments shrinks or expand reset its width or anything to 100%. Since it is removed form the flow when scroled it will not move.</td>
+            </tr>
+            <tr>
+                <td>Fixed</td>
+                <td>the box is pinned to a specific sopt on a page. The fixed element stays the same regardless of scrolling. Attributes can be used</td>
+            </tr>
+            <tr>
+                <td>sticky</td>
+                <td>keeps an element in the document flow as the user scrolls, but sticks to a specified position as the page is scrolled further. Attribues is used specify from where it should stick</td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Z-index</td>
+                <td>When elements overlap, this property controls how far back or how far forward an element should appear on the web page </td>
+                <td>integer value</td>
+                <td>default value is 0. and Depending on the values, the elements in layered in the browser</td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">4</td>
+                <td rowspan="2">float</td>
+                <td rowspan="2">Ditermines how far left or how far right an elment shoul float within its parent element and the width should be specified</td>
+                <td>left</td>
+                <td>floats element to the left side</td>
+            </tr>
+            <tr>
+                <td>right</td>
+                <td>floats element to the right side</td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td rowspan="4">5</td>
+                <td rowspan="4">clear</td>
+                <td rowspan="4">Specifies how elements should behave when they bump into each other</td>
+                <td>left</td>
+                <td>Left side will not touch any other elements within the same containing element</td>
+            </tr>
+            <tr>
+                <td>right</td>
+                <td>Right side will not touch any other elements</td>
+            </tr>
+            <tr>
+                <td>both</td>
+                <td>neither side of the element will touch any other element</td>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>element can touch either side</td>
+            </tr>
+        </table>
+    </section>
+</body>
 </html>

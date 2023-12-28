@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Helvetica,Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Whisper', cursive;
+    font-size: 100px;
+    background-color: grey;
+    position: fixed;
+    width:100%;
+    margin-top: 0;
+    border-top: 0;
+}
+
+h2{
+    text-align: center;
+    font-family: Kalnia;
+    font-size:50px;
+    position: relative;
+    top:200px;
+}
+
+td{
+    border:solid white 1px;
+    text-align: center;
+}
+
+thead{
+    font-size: 30px;
+    font-family: kalnia;
+    background-color: grey;
+}
+
+table{
+    max-width:800px;
+    position: relative;
+    top:200px;
+}
