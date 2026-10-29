@@ -1727,3 +1727,7 @@ a:focus-visible {
 .visual-antech .project-art-index {
   z-index: 1;
 }
+
+.project-link {
+  font-variant-emoji: text;
+}
